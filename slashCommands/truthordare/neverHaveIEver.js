@@ -17,7 +17,7 @@ module.exports = {
     try{
         const res = await axios.get(`https://api.truthordarebot.xyz/v1/nhie?rating=${interaction.options.get("rating")? interaction.options.get("rating").value : "pg"}`);
         const embed = new MessageEmbed()
-            .setColor("#0099ff")
+            .setColor("#0000ff")
             .setTitle("Never Have I ever")
             .setDescription(res.data.question)
             .setTimestamp()

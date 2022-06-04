@@ -18,7 +18,7 @@ module.exports = {
     try{
         const res = await axios.get(`https://api.truthordarebot.xyz/v1/truth?rating=${interaction.options.get("rating")? interaction.options.get("rating").value : "pg"}`);
         const embed = new MessageEmbed()
-            .setColor("#0099ff")
+            .setColor("#00ff00")
             .setTitle("Truth")
             .setDescription(res.data.question)
             .setTimestamp()
