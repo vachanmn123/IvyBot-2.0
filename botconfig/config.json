@@ -13,6 +13,11 @@
       "Folder": "truthordare",
       "CmdName": "truthordare",
       "CmdDescription": "Play Truth or Dare!"
+    },
+    {
+      "Folder": "NSFW",
+      "CmdName": "nsfw",
+      "CmdDescription": "Get NSFW pics"
     }
   ]
 }
