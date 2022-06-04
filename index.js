@@ -21,18 +21,18 @@ const client = new Discord.Client({
         //Discord.Intents.FLAGS.GUILD_WEBHOOKS,
         //Discord.Intents.FLAGS.GUILD_INVITES,
         Discord.Intents.FLAGS.GUILD_VOICE_STATES,
-        //Discord.Intents.FLAGS.GUILD_PRESENCES,
+        Discord.Intents.FLAGS.GUILD_PRESENCES,
         Discord.Intents.FLAGS.GUILD_MESSAGES,
         Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
-        //Discord.Intents.FLAGS.GUILD_MESSAGE_TYPING,
-        //Discord.Intents.FLAGS.DIRECT_MESSAGES,
-        //Discord.Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
-        //Discord.Intents.FLAGS.DIRECT_MESSAGE_TYPING
+        Discord.Intents.FLAGS.GUILD_MESSAGE_TYPING,
+        Discord.Intents.FLAGS.DIRECT_MESSAGES,
+        // Discord.Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
+        // Discord.Intents.FLAGS.DIRECT_MESSAGE_TYPING
     ],
     presence: {
       activity: {
-        name: `Music`, 
-        type: "LISTENING", 
+        name: `TakedownIvy build me`, 
+        type: "WATCHING", 
       },
       status: "online"
     }
@@ -54,10 +54,7 @@ client.login(config.token)
 
 /**
  * @INFO
- * Bot Coded by Tomato#6966 | https://discord.gg/milrato
+ * Bot Coded by vachanmn123 | https://github.com/vachanmn123
  * @INFO
- * Work for Milrato Development | https://milrato.eu
- * @INFO
- * Please mention Him / Milrato Development, when using this Code!
- * @INFO
+ * Original template from Tomato6966/Discord-Js-Handler-Template | https://github.com/Tomato6966/Discord-Js-Handler-Template
  */
