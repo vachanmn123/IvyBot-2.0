@@ -1,5 +1,5 @@
 {
-  "token": "Nzk4ODg3ODE0MDc0NTk3NDA4.GcY4VF.hdACDafwOApHp4YR5JD8urwrXG0b0fN18BTUek",
+  "token": "Your Token",
   "prefix": ";",
   "loadSlashsGlobal": true,
   "_COMMENT_": "Set it to true, when your Slash Commands are ready, false loads instant true loads slow but stable! (GLOBAL/GUILD COMMANDS, DISCORD DOCS!)",
@@ -8,11 +8,6 @@
       "Folder": "Info",
       "CmdName": "info",
       "CmdDescription": "Grant specific Information about something!"
-    },
-    {
-      "Folder": "Admin",
-      "CmdName": "admin",
-      "CmdDescription": "Administrate the Server!"
     },
     {
       "Folder": "truthordare",
