@@ -19,20 +19,21 @@ module.exports = {
     try{
         if (!interaction.channel.nsfw) return interaction.reply("This channel is not marked as NSFW");
         const tags = interaction.options.get("tags");
-        const url = `https://realbooru.com/index.php?page=dapi&s=post&q=index&json=1&limit=1&tags=${tags.value}`;
+        const url = `https://realbooru.com/index.php?page=dapi&s=post&q=index&json=1&limit=100&tags=${tags.value}`;
         const res = await axios.get(url);
         if (!res.data[0]) return interaction.reply("No results found");
+        res_data = res.data[Math.floor(Math.random() * res.data.length)]
         const embed = new MessageEmbed()
             .setColor("DARK_RED")
             .setTitle(`RealBooru`)
-            .setDescription(`Tags: ${res.data[0].tags}`)
+            .setDescription(`Tags: ${res_data.tags}`)
             .setAuthor({
                 name: client.user.username,
                 icon_url: client.user.avatarURL()
             })
         channel = interaction.channel;
         interaction.reply({embeds:[embed]});
-        channel.send(`https://realbooru.com/images/${res.data[0].image.slice(0, 2)}/${res.data[0].image.slice(2, 4)}/${res.data[0].image}`);
+        channel.send(`https://realbooru.com/images/${res_data.image.slice(0, 2)}/${res_data.image.slice(2, 4)}/${res_data.image}`);
     } catch (e) {
         console.log(String(e.stack).bgRed)
     }
@@ -40,10 +41,7 @@ module.exports = {
 }
 /**
   * @INFO
-  * Bot Coded by Tomato#6966 | https://github.com/Tomato6966/Discord-Js-Handler-Template
+  * Bot Coded by vachanmn123
   * @INFO
-  * Work for Milrato Development | https://milrato.eu
-  * @INFO
-  * Please mention Him / Milrato Development, when using this Code!
-  * @INFO
+  * Template by Tomato6966
 */
