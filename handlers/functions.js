@@ -706,7 +706,7 @@ function onCoolDown(message, command) {
    */
   function change_status(client) {
     try {
-      client.user.setActivity(`/ to get started!| ${client.guilds.cache.size} Guilds` {
+      client.user.setActivity(`/ to get started!| ${client.guilds.cache.size} Guilds`, {
         type: "WATCHING",
       });
     } catch (e) {
