@@ -21,10 +21,13 @@ module.exports = {
         ['fishing', 'fishing'],
         ['lettertile', 'lettertile'],
         ['wordsnack', 'wordsnack'],
-        ['doodlecrew', 'doodlecrew'],
+        ['sketchheads', 'sketchheads'],
         ['spellcast', 'spellcast'],
         ['awkword', 'awkword'],
-        ['puttparty', 'puttparty']
+        ['puttparty', 'puttParty'],
+        ['landio', 'landIo'],
+        ['blazing8s', 'blazing8s'],
+        ['letterleague', 'letterLeague']
     ]}},
     {"Channel": { name: "select_channel", description: "the channel to start activity, if none is provided then the VC you are in", required: false }}, //to use in the code: interacton.getChannel("what_channel")
 
