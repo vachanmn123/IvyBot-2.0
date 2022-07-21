@@ -51,6 +51,7 @@ module.exports = {
             )
         interaction.reply({embeds: [emb]})
     } catch (e) {
+        interaction.reply(`An error occured \n \`\`\`e\`\`\``)
         console.log(String(e.stack).bgRed)
     }
   }
