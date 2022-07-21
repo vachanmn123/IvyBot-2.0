@@ -2,6 +2,8 @@ const Discord = require("discord.js");
 const config = require(`./botconfig/config.json`);
 const settings = require(`./botconfig/settings.json`);
 const colors = require("colors");
+const { DiscordTogether } = require('discord-together');
+
 const client = new Discord.Client({
     //fetchAllMembers: false,
     //restTimeOffset: 0,
@@ -49,9 +51,12 @@ client.categories = require("fs").readdirSync(`./commands`);
     .forEach(h => {
         require(`./handlers/${h}`)(client);
     })
-//Start the Bot
-client.login(config.token)
 
+// Setup discord-together
+client.discordTogether = new DiscordTogether(client);
+
+//Start the Bo
+client.login(config.token)
 /**
  * @INFO
  * Bot Coded by vachanmn123 | https://github.com/vachanmn123
